@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guia 40+ para a Menopausa — Baixa e Já Começa a se Organizar</title>
+<meta name="description" content="Cardápio, treino em casa e diário de sintomas para os 40+. Baixa e já começa a se organizar nessa fase com mais clareza.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F6F2F8;
+  --surface:#FFFFFF;
+  --ink:#251B2D;
+  --muted:#5E5367;
+  --plum:#3E2A4D;
+  --plum-ink:#FFFFFF;
+  --sage:#6E927E;
+  --sage-soft:#E3EDE7;
+  --gold:#D9A53A;
+  --gold-soft:#FBF1D9;
+  --gold-ink:#2A1E05;
+  --line:#DDD3E4;
+  --dark-bg:#2E1F3A;
+  --dark-ink:#F4EEF7;
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1B1322;
+    --surface:#261B30;
+    --ink:#F1EAF5;
+    --muted:#BBAEC6;
+    --plum:#E3CFF0;
+    --plum-ink:#2A1B35;
+    --sage:#8DB59E;
+    --sage-soft:#22332A;
+    --gold-soft:#3A2D10;
+    --gold-ink:#2A1E05;
+    --line:#41334D;
+    --dark-bg:#120C18;
+    --dark-ink:#F1EAF5;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1B1322;--surface:#261B30;--ink:#F1EAF5;--muted:#BBAEC6;--plum:#E3CFF0;--plum-ink:#2A1B35;
+  --sage:#8DB59E;--sage-soft:#22332A;--gold-soft:#3A2D10;--gold-ink:#2A1E05;--line:#41334D;--dark-bg:#120C18;--dark-ink:#F1EAF5;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:18px;line-height:1.6}
+h1,h2,h3{font-family:"Fraunces",Georgia,"Times New Roman",serif;font-weight:700;line-height:1.12;margin:0;letter-spacing:-0.01em}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:72px 0}
+.narrow{max-width:62ch}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--plum);color:var(--plum-ink);font:600 18px/1 "Figtree",system-ui,sans-serif;text-decoration:none;padding:20px 30px;border-radius:999px;transition:transform .15s ease, box-shadow .15s ease;box-shadow:0 6px 0 rgba(0,0,0,.18)}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 rgba(0,0,0,.18)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.btn.gold{background:var(--gold);color:var(--gold-ink)}
+
+/* hero */
+.hero{padding:56px 0 80px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.eyebrow{display:inline-block;background:var(--sage-soft);color:var(--ink);font-size:15px;font-weight:600;padding:8px 14px;border-radius:999px;margin-bottom:24px}
+.hero h1{font-size:clamp(36px,5.4vw,60px)}
+.hero .sub{margin-top:22px;font-size:20px;color:var(--muted);max-width:50ch}
+.hero .btn{margin-top:34px}
+.hero .note{margin-top:18px;font-size:15px;color:var(--muted)}
+
+/* diary sheet (hero visual) */
+.sheet-stage{position:relative;padding:20px}
+.sheet{background:#FFFDF9;color:#2A2230;border-radius:6px;padding:26px 24px 22px;box-shadow:0 30px 60px -20px rgba(40,20,60,.45),0 2px 0 rgba(0,0,0,.04);transform:rotate(2.2deg);aspect-ratio:210/270;max-width:400px;margin-left:auto;border-top:10px solid var(--sage)}
+.sheet-title{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:22px}
+.sheet-meta{display:flex;justify-content:space-between;font-size:12px;color:#6F6478;margin:8px 0 14px;border-bottom:1px solid #E5DDE9;padding-bottom:10px}
+.sheet table{width:100%;border-collapse:collapse;font-size:12px;table-layout:fixed}
+.sheet th{font-weight:600;text-align:left;padding:6px 4px;color:#6F6478;border-bottom:1.5px solid #CFC3D6}
+.sheet th:first-child{width:34%}
+.sheet td{padding:0;height:27px;border-bottom:1px solid #E5DDE9;text-align:center}
+.sheet td:first-child{text-align:left;padding-left:4px;font-weight:500}
+.dot{display:inline-block;width:12px;height:12px;border-radius:50%;border:1.5px solid #9A8DA5}
+.dot.on{background:var(--sage);border-color:var(--sage)}
+.sheet-foot{margin-top:14px;font-size:12px;color:#6F6478}
+.sheet-foot .ln{display:block;height:22px;border-bottom:1px solid #E5DDE9}
+.chip{position:absolute;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:14px;font-weight:600;box-shadow:0 10px 24px -12px rgba(40,20,60,.4)}
+.chip.a{left:0;top:22%;transform:rotate(-4deg)}
+.chip.b{left:6%;bottom:12%;transform:rotate(3deg)}
+
+/* section headings */
+.kicker{color:var(--sage);font-weight:700;font-size:16px;margin-bottom:12px}
+h2{font-size:clamp(28px,3.8vw,42px)}
+.lead{margin-top:18px;color:var(--muted)}
+
+/* o que é */
+.what .statement{font-family:"Fraunces",Georgia,serif;font-size:clamp(24px,3vw,32px);font-weight:500;line-height:1.3;max-width:28ch;margin-bottom:24px}
+.what p.body{max-width:62ch;color:var(--muted)}
+
+/* blocks */
+.blocks{background:var(--surface);border-block:1px solid var(--line)}
+.block-list{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.block{border-radius:var(--radius);padding:28px 26px;border:1px solid var(--line);background:var(--bg)}
+.block:nth-child(1){border-top:6px solid var(--sage)}
+.block:nth-child(2){border-top:6px solid var(--plum)}
+.block:nth-child(3){border-top:6px solid var(--gold)}
+.block h3{font-size:24px;margin-bottom:10px}
+.block p{color:var(--muted);font-size:17px}
+.blocks .foot{margin-top:28px;color:var(--muted)}
+
+/* pra quem é */
+.for-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.checks li{position:relative;padding:18px 20px 18px 58px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.checks li::before{content:"";position:absolute;left:20px;top:20px;width:24px;height:24px;border-radius:50%;background:var(--sage)}
+.checks li::after{content:"";position:absolute;left:29px;top:25px;width:6px;height:11px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+
+/* como funciona */
+.how{background:var(--dark-bg);color:var(--dark-ink)}
+.how .kicker{color:var(--gold)}
+.steps{margin:40px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s}
+.steps li{position:relative;padding:0 28px 0 0;counter-increment:s}
+.steps li::before{content:counter(s);display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--gold-ink);font:700 20px "Fraunces",Georgia,serif;margin-bottom:18px;position:relative;z-index:1}
+.steps li::after{content:"";position:absolute;left:46px;right:8px;top:23px;height:2px;background:rgba(255,255,255,.22)}
+.steps li:last-child::after{display:none}
+.steps h3{font-size:24px;margin-bottom:6px}
+.steps p{color:#CFC2DA;font-size:17px}
+
+/* recebe */
+.get-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.plain{list-style:none;margin:28px 0 0;padding:0}
+.plain li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;gap:12px}
+.plain li::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:var(--sage);margin-top:10px}
+
+/* bonus */
+.bonus-list{margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.bonus{position:relative;background:var(--gold-soft);border:3px solid var(--gold);border-radius:18px;padding:36px 28px 28px;box-shadow:0 14px 30px -18px rgba(217,165,58,.8)}
+.badge{position:absolute;top:-17px;left:24px;background:var(--gold);color:var(--gold-ink);font-weight:700;font-size:15px;padding:7px 16px 7px 12px;border-radius:999px;display:flex;align-items:center;gap:8px}
+.badge svg{width:18px;height:18px}
+.bonus h3{font-size:24px;margin-bottom:10px}
+.bonus p{color:var(--ink);opacity:.85;font-size:17px}
+.bonus .price{margin-top:18px;font-weight:600;font-size:16px}
+.bonus .price s{opacity:.6}
+.bonus .price span{background:var(--gold);color:var(--gold-ink);padding:3px 10px;border-radius:999px;margin-left:8px;font-size:14px}
+
+/* oferta */
+.offer{padding-top:24px}
+.offer-card{background:var(--surface);border:2px solid var(--plum);border-radius:24px;padding:44px 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.offer-card h2{margin-bottom:22px}
+.offer-card ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.offer-card li{display:flex;gap:12px;font-size:17px}
+.offer-card li::before{content:"";flex:0 0 18px;height:18px;margin-top:5px;border-radius:50%;background:var(--sage)}
+.offer-card li.bn::before{background:var(--gold)}
+.buy{text-align:center;background:var(--bg);border-radius:18px;padding:32px 24px}
+.buy .was{color:var(--muted);font-size:17px}
+.buy .was s{opacity:.8}
+.buy .price{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:clamp(46px,7vw,68px);line-height:1;margin:10px 0 4px;color:var(--ink)}
+.buy .once{color:var(--muted);font-size:16px;margin-bottom:24px}
+.buy .btn{width:100%}
+.guar{margin-top:20px;font-size:15px;color:var(--muted);display:flex;gap:10px;justify-content:center;align-items:flex-start;text-align:left}
+.guar svg{flex:0 0 22px;margin-top:2px}
+
+footer{padding:40px 0 60px;border-top:1px solid var(--line)}
+footer p{font-size:14px;color:var(--muted);max-width:80ch}
+
+@media (max-width:860px){
+  body{font-size:17px}
+  section{padding:56px 0}
+  .hero-grid,.for-grid,.get-grid,.offer-card{grid-template-columns:1fr;gap:36px}
+  .sheet{margin:0 auto;transform:rotate(1.5deg)}
+  .block-list,.bonus-list{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:34px}
+  .steps li::after{display:none}
+  .offer-card{padding:30px 22px}
+  .chip.a{left:-2px}
+  .btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Material imprimível de apoio · Entrega imediata</span>
+      <h1>Guia 40+ para a Menopausa — Baixa e Já Começa a se Organizar</h1>
+      <p class="sub">Cardápio, treino em casa e diário de sintomas, tudo num só lugar. Você não precisa mais juntar informação solta de vários sites diferentes pra entender o que está sentindo e como se cuidar no dia a dia.</p>
+      <a class="btn" href="#oferta">Quero o guia — R$ 27,90</a>
+      <p class="note">PDF em formato A4, pronto pra imprimir.</p>
+    </div>
+
+    <div class="sheet-stage" aria-hidden="true">
+      <div class="chip a">Cardápio da semana</div>
+      <div class="sheet">
+        <div class="sheet-title">Diário de sintomas</div>
+        <div class="sheet-meta"><span>Semana: ____ / ____</span><span>Anotações pra consulta</span></div>
+        <table>
+          <thead><tr><th>Sintoma</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th></tr></thead>
+          <tbody>
+            <tr><td>Calores</td><td><i class="dot on"></i></td><td><i class="dot"></i></td><td><i class="dot on"></i></td><td><i class="dot"></i></td><td><i class="dot"></i></td></tr>
+            <tr><td>Sono</td><td><i class="dot"></i></td><td><i class="dot on"></i></td><td><i class="dot on"></i></td><td><i class="dot"></i></td><td><i class="dot on"></i></td></tr>
+            <tr><td>Humor</td><td><i class="dot on"></i></td><td><i class="dot"></i></td><td><i class="dot"></i></td><td><i class="dot on"></i></td><td><i class="dot"></i></td></tr>
+            <tr><td>Energia</td><td><i class="dot"></i></td><td><i class="dot"></i></td><td><i class="dot on"></i></td><td><i class="dot"></i></td><td><i class="dot on"></i></td></tr>
+            <tr><td>Outros</td><td></td><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+        <div class="sheet-foot">Pra levar ao médico:<span class="ln"></span><span class="ln"></span><span class="ln"></span></div>
+      </div>
+      <div class="chip b">Treino em casa</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="what">
+  <div class="wrap">
+    <p class="kicker">O que é isso</p>
+    <p class="statement">Não é promessa de solução. É organização pra você entender e acompanhar essa fase.</p>
+    <p class="body">O Guia 40+ para a Menopausa reúne cardápio, treino em casa e diário de sintomas num material só, pra você ter um ponto de apoio organizado nessa fase — sem depender de informação solta e contraditória da internet.</p>
+  </div>
+</section>
+
+<section class="blocks">
+  <div class="wrap">
+    <p class="kicker">O que vem no guia</p>
+    <h2>3 blocos temáticos</h2>
+    <div class="block-list">
+      <div class="block">
+        <h3>Cardápio</h3>
+        <p>Sugestões de refeição organizadas por semana, pensando no bem-estar geral da fase.</p>
+      </div>
+      <div class="block">
+        <h3>Treino em Casa</h3>
+        <p>Sequências simples de exercício, sem equipamento necessário e sem precisar de academia.</p>
+      </div>
+      <div class="block">
+        <h3>Diário de Sintomas</h3>
+        <p>Espaço pra registrar o que você sente dia a dia e levar pro médico se precisar.</p>
+      </div>
+    </div>
+    <p class="foot">Cada bloco: material pronto pra consultar e usar no dia a dia, sem complicação.</p>
+  </div>
+</section>
+
+<section class="for">
+  <div class="wrap for-grid">
+    <div>
+      <p class="kicker">Pra quem é</p>
+      <h2>Se você se reconhece em algum desses pontos, o material é pra você.</h2>
+    </div>
+    <ul class="checks">
+      <li>Está na fase da menopausa e sente que falta organização no que já sabe sobre o assunto.</li>
+      <li>Já pesquisou muito, mas sente que a informação está espalhada e confusa.</li>
+      <li>Quer um diário pra registrar sintoma e levar pronto pra consulta médica.</li>
+      <li>Procura um cardápio e um treino simples pra incluir na rotina sem complicação.</li>
+      <li>Prefere ter um material físico de consulta, não só pesquisar no celular.</li>
+      <li>Quer se sentir mais no controle dessa fase, com organização e informação clara.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <p class="kicker">Como funciona</p>
+    <h2>Do pagamento ao uso, em três passos</h2>
+    <ol class="steps">
+      <li><h3>Compra</h3><p>Pagamento único. Você recebe o PDF na hora.</p></li>
+      <li><h3>Imprime</h3><p>Imprime o guia completo.</p></li>
+      <li><h3>Usa no dia a dia</h3><p>Cardápio, treino e diário de sintomas, no seu ritmo.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="get">
+  <div class="wrap get-grid">
+    <div>
+      <p class="kicker">O que você recebe</p>
+      <h2>Tudo num único PDF, organizado em 3 blocos</h2>
+    </div>
+    <ul class="plain" style="margin-top:0">
+      <li>Guia completo em PDF, organizado em 3 blocos</li>
+      <li>Cardápio semanal sugerido</li>
+      <li>Treino em casa sem equipamento</li>
+      <li>Diário de sintomas pra registro diário</li>
+      <li>Formato A4, pronto pra impressão</li>
+    </ul>
+  </div>
+</section>
+
+<section class="bonus-sec" style="padding-top:24px">
+  <div class="wrap">
+    <p class="kicker">Bônus</p>
+    <h2>E ainda leva 2 materiais de presente</h2>
+    <div class="bonus-list">
+      <article class="bonus">
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8"/><path d="M7.5 8a2.5 2.5 0 1 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 1 1 0 5"/></svg>BÔNUS 1</span>
+        <h3>Guia de Alimentos que Costumam Ajudar no Bem-Estar da Fase</h3>
+        <p>Um guia educativo com alimentos frequentemente associados ao bem-estar nessa fase, pra você considerar incluir na rotina alimentar.</p>
+        <p class="price"><s>R$ 19,90</s><span>Incluso no material</span></p>
+      </article>
+      <article class="bonus">
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8"/><path d="M7.5 8a2.5 2.5 0 1 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 1 1 0 5"/></svg>BÔNUS 2</span>
+        <h3>Checklist de Sintomas para Levar ao Médico</h3>
+        <p>Um checklist organizado pra você levar preenchido na consulta, facilitando a conversa com o profissional de saúde.</p>
+        <p class="price"><s>R$ 17,90</s><span>Incluso no material</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="oferta">
+  <div class="wrap">
+    <div class="offer-card">
+      <div>
+        <h2>Tudo isso por R$ 27,90</h2>
+        <ul>
+          <li>Guia 40+ para a Menopausa completo em PDF</li>
+          <li>Bloco Cardápio</li>
+          <li>Bloco Treino em Casa</li>
+          <li>Bloco Diário de Sintomas</li>
+          <li>Formato A4, pronto pra impressão</li>
+          <li class="bn">Bônus 1 — Guia de Alimentos que Costumam Ajudar no Bem-Estar da Fase</li>
+          <li class="bn">Bônus 2 — Checklist de Sintomas para Levar ao Médico</li>
+          <li>Entrega imediata por e-mail</li>
+          <li>Garantia incondicional de 7 dias</li>
+        </ul>
+      </div>
+      <div class="buy">
+        <p class="was">De <s>R$ 65,70</s> por</p>
+        <p class="price">R$ 27,90</p>
+        <p class="once">pagamento único</p>
+        <a class="btn" href="https://pay.cakto.com.br/o9os4nf_1165814" rel="noopener">Quero o guia — R$ 27,90</a>
+        <p class="guar">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          <span>Garantia de 7 dias. Não gostou, o dinheiro volta — sem burocracia.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Este material é um recurso educativo de apoio e não constitui orientação médica, tratamento ou promessa de resultado. Consulte um ginecologista ou profissional de saúde para acompanhamento da menopausa. Garantia incondicional de 7 dias.</p>
+  </div>
+</footer>
+
+</body>
+</html>
